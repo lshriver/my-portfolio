@@ -44,3 +44,5 @@ A Flask-based personal portfolio website showcasing scientific and computational
 2. Install required dependencies: `pip install -r requirements.txt`.
 3. Run the Flask application: `python app.py`
 4. Access site preview at http://localhost:5000/.
+
+- [ ] Get it live
