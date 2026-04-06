@@ -15,7 +15,7 @@
 
     /* Gradients */
     --gradient-light-to-dark-blue: linear-gradient(to right bottom, #00E8FF, #14B5FF, #3A98FF, #0070EB);
-    --gradient-cyan-to-blue: linear-gradient(130deg, #00FFEE, #0A95EB);
+    --gradient-cyan-to-blue: linear-gradient(#00FFEE, #0596F0);
     --gradient-green-to-blue: linear-gradient(130 deg, #22F792, #27AAFF);
     --gradient-blue-to-purple: linear-gradient(to right bottom, #00E8FF, #14B5FF, #5280FF, #7952F5);
     --gradient-blue-to-purple: linear-gradient(to right bottom, rgba(0, 232, 255, 0.2), rgba(20, 181, 255, 0.2), rgba(82, 128, 255, 0.2), rgba(121, 82, 245, 0.2));
@@ -436,6 +436,17 @@ a.btn {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+/* Emoji style to restore original colors */
+.emoji {
+    background: none;
+    color: initial;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    font-style: normal;
+    text-shadow: none;
+    display: inline-block;
 }
 
 /* ----- Mobile Responsiveness Enhancements ----- */
