@@ -32,7 +32,9 @@ A Flask-based personal portfolio website showcasing scientific and computational
   - Thermodynamics and PCA app
   - Bifurcation diagram app
 - 🐈‍⬛ **Github:** Github repositories that demonstrate mathematical and computational abilities.
+## Minimal Apps and Visualizations
 - 🪐 **Kepler's Laws:** A fun javascript-powered visualization of Kepler's laws.
+- 🔊 **Text-to-speech:** A simple text-to-speech app.
 
 ## Technical Implementation
 - **Framework:** Flask (Python)
@@ -46,4 +48,3 @@ A Flask-based personal portfolio website showcasing scientific and computational
 2. Install required dependencies: `pip install -r requirements.txt`.
 3. Run the Flask application: `python app.py`
 4. Access site preview at http://localhost:5000/.
-5. 
