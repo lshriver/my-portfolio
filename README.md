@@ -1,2 +1,46 @@
 # my-portfolio
-Yet another attempt at a one-click landing/portfolio page.
+A Flask-based personal portfolio website showcasing scientific and computational projects through interactive visualizations and engaging user experiences.
+
+## Project Structure
+```aiignore
+.
+├── app.py                # Main Flask application
+├── static/               # All static assets for Flask
+│   ├── css/              # CSS files
+│   ├── js/               # JavaScript files
+│   └── images/           # Images and media
+├── templates/            # Flask HTML templates
+│   ├── base.html         # Base template with common elements
+│   ├── index.html        # Home page
+│   ├── projects/         # Project pages
+│   └── resources/        # Educational resource pages
+└── utils/                # Utility functions
+```
+
+## Features
+- **Interactive project showcase:** Links to main projects (see below).
+- **Responsive design:** Mobile-friendly layout with intuitive navigation.
+- **Tech Icon Tooltips:** Hover effects showing technology icons used in each project.
+
+## Main Projects
+- 📜 **There and Back Again:** A personal Zettelkasten built using PreTeXt.
+- 🎈 **Streamlit Projects:** Demonstrations of scientific streamlit projects with interactive elements.
+  - Neural signals app
+  - Kuramoto model app
+  - Thermodynamics and PCA app
+  - Bifurcation diagram app
+- 🐈‍⬛ **Github:** Github repositories that demonstrate mathematical and computational abilities.
+- 🪐 **Kepler's Laws:** A fun javascript-powered visualization of Kepler's laws.
+
+## Technical Implementation
+- **Framework:** Flask (Python)
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Math Rendering:** MathJax
+- **Styling:** Custom CSS with gradient effects and responsive design.
+- **Interactivity:** Vanilla JavaScript for animations and uer interactions.
+
+## Running the Application
+1. Ensure Python 3.10+ is installed.
+2. Install required dependencies: `pip install -r requirements.txt`.
+3. Run the Flask application: `python app.py`
+4. Access site preview at http://localhost:5000/.
