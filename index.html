@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Lauren Shriver - Portfolio{% endblock %}</title>
-    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/tech-icons.css') }}">
+    <title>Lauren Shriver - Portfolio</title>
+    <link rel="icon" href="static/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/tech-icons.css">
     <!-- Responsive meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
-    <div class="container" stype="padding-top: 60px;">
+    <div class="container" style="padding-top: 60px;">
         <header>
-            {% if request.path == '/' %}
             <div style="text-align: center; margin-bottom: 2rem;">
                 <h1 class="site-title">
                     <a href="{{ url_for('home') }}" class="gradient_text_2">Lauren Shriver</a>
@@ -35,7 +34,6 @@
                     }
                 </style>
             </div>
-            {% endif %}
         </header>
 
         <main>
