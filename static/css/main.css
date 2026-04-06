@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+:root {
+    /* Color Palette */
+    --color-bg: #0D1117;
+    --color-surface: #161B22;
+    --color-primary: #14B5FF;
+    --color-secondary: #7952F5;
+    --color-text: #C5F8FF;
+    --color-muted: #8B949E;
+
+    /* Link Colors */
+    --color-link: rgba(99, 102, 241, 0.35);
+    --color-link-hover: rgba(168, 85, 247, 0.25);
+
+    /* Gradients */
+    --gradient-light-to-dark-blue: linear-gradient(to right bottom, #00E8FF, #14B5FF, #3A98FF, #0070EB);
+    --gradient-cyan-to-blue: linear-gradient(130deg, #00FFEE, #0A95EB);
+    --gradient-green-to-blue: linear-gradient(130 deg, #22F792, #27AAFF);
+    --gradient-blue-to-purple: linear-gradient(to right bottom, #00E8FF, #14B5FF, #5280FF, #7952F5);
+    --gradient-blue-to-purple: linear-gradient(to right bottom, rgba(0, 232, 255, 0.2), rgba(20, 181, 255, 0.2), rgba(82, 128, 255, 0.2), rgba(121, 82, 245, 0.2));
+    --gradient-purple-to-pink: linear-gradient(135deg, rgba(99, 102, 241, 0.35), rgba(139, 92, 246, 0.3), rgba(168, 85, 247, 0.25));
+
+    --gradient-eigenscribe: linear-gradient(135deg, #00E8FF, #14B5FF, #7952F5);
+
+    /* Icon Gradients */
+    --tech-icon-gradient: linear-gradient(135deg, rgba(34, 247, 147, 0.8), rgba(10, 149, 235, 0.8));
+    --stem-icon-gradient: linear-gradient(135deg, rgba(169, 34, 247, 0.8), rgba(10, 149, 235, 0.8));
+
+    /* Typography */
+    --font-aclonica: 'Aclonica', sans-serif;
+
+    /* Borders & Radius */
+    --border-xs: 4px;
+    --border-sm: 8px;
+    --border-md: 12px;
+    --border-lg: 24px;
+    --border-xl: 40px;
+
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 50px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
+
+    --shadow-header: 0 2px 10px rgba(0, 0, 0, 0.3);
+    --shadow-logo: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-button: 0 4px 15px 0 rgba(56, 152, 255, 0.5);
+    --shadow-text: 0 1px 3px rgba(0, 0, 0, 0.5)
+    --shadow-button-2: 0 4px 15px 0 rgba(20, 165, 255, 0.6);
+
+    /* Glassmorphism */
+    --glass-bg: rgba(0, 0, 0, 0.5);
+    --glass-border: rgba(255, 255, 255, 0.1)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-aclonica);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/wisp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 0.4s ease-in-out;
+}
+
+.tag-purple {
+    background: var(--gradient-purple-to-pink);
+    border: 1px solid rgba(129, 140, 248, 0.45);
+    color: #C4B5FD;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* ----- Layout System ----- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.section {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    box-shadow 0.3s ease;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 255, 238, 0.15), var(--shadow-lg);
+    border-color: var(--gradient-blue-to-purple);
+}
+
+.section-content {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+/* ----- Site Header & Navigation ----- */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--gradient-blue-to-purple);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    padding: var(--border-md) var(--border-lg);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--shadow-header);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-logo {
+    height: 75px;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: drop-shadow(var(--shadow-logo));
+}
+
+.site-logo:hover {
+    filter: drop-shadow(var(--shadow-logo)) brightness(1.1) scale(1.05);
+    transform: scale(1.05);
+}
+
+.nav {
+    display: flex;
+    gap: var(--space-md);
+    overflow-x: auto;
+    flex-shrink: 0;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.nav::-webkit-scrollbar {
+    display: none;
+}
+
+.nav a {
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--color-link-hover);
+    transform: translateY(-1px);
+}
+
+/* ----- Card System ----- */
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 1.5rem;
+}
+
+.card-row .feature-box {
+    flex: 0 1 400px;
+}
+
+.feature-box {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 70px;
+    transition: transform 0.3s ease;
+    box-shadow: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-box-content {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.feature-box-content h2, .feature-box-content h3 {
+    font-weight: bold;
+    background: var(--gradient-light-to-dark-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 0;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.feature-box-content p {
+    margin-bottom: 15px;
+    width: 100%;
+    color: var(--color-text);
+}
+
+/* ----- Button Styles ----- */
+.btn {
+    background-image: var(--gradient-light-to-dark-blue);
+    box-shadow: 0 4px 15px 0 var(--shadow-button);
+    width: 85%;
+    max-width: 180px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px auto;
+    height: 45px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: var(--radius-md);
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    color: whitesmoke;
+    text-shadow: var(--shadow-text);
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.btn span, .btn a, .btn p, .btn div {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: whitesmoke;
+    background: transparent;
+    background-image: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    text-shadow: var(--shadow-text);
+    margin: 0;
+    padding: 0;
+}
+
+a.btn {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn > a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.btn-style-2 {
+    background-image: var(--gradient-blue-to-purple);
+    border: none;
+    color: whitesmoke;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    box-shadow: var(--shadow-button-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover, .btn-style-2:hover {
+    background-position: 100% 0;
+    filter: brightness(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.eigenscribe-btn {
+    background-image: var(--gradient-light-to-dark-blue);
+    box-shadow: var(--shadow-button);
+    border: none;
+    color: white;
+    text-shadow: var(--shadow-text);
+}
+
+.eigenscribe-btn:hover {
+    filter: brightness(1.1);
+}
+
+/* ----- Contact Links ----- */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.contact-links a {
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-links a:hover {
+    filter: brightness(1.2);
+    text-decoration: none;
+}
+
+/* ----- More Font Styles ----- */
+/* Gradient text styles */
+.gradient_text_1 {
+    font-weight: bold !important;
+    background: var(--gradient-light-to-dark-blue);
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    background-clip: text !important;
+    text-align: center;
+}
+
+.gradient_text_2 {
+    font-weight: bold;
+    background: var(--gradient-cyan-to-blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.gradient_text_3 {
+    font-weight: bold;
+    background: var(--gradient-green-to-blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.gradient_text_4 {
+    font-weight: bold;
+    background: var(--gradient-eigenscribe);
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    background-clip: text !important;
+    text-align: center;
+}
+
+.eigenscribe-gradient-text {
+    background: var(--gradient-eigenscribe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-link, .feature-box a {
+    background: var(--gradient-light-to-dark-blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-decoration: non;
+    position: relative;
+}
+
+.gradient-link:hover, feature-box a:hover {
+    text-decoration: none;
+    filter: brightness(1.3);
+}
+
+.gradient-link::after, .feature-box a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background: var(--gradient-light-to-dark-blue);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.gradient-link:hover::after, .feature-box a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Apply gradient only to link text, not emojis */
+.link-text {
+    background: var(--gradient-light-to-dark-blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* ----- Mobile Responsiveness Enhancements ----- */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+   h2 {
+        font-size: 1.5rem;
+   }
+
+   h3 {
+        font-size: 1.3rem;
+   }
+
+   .container {
+        padding: 15px;
+        padding-top: 40px;
+   }
+
+   .feature-box {
+        padding: 15px;
+        margin-bottom: 50px;
+   }
+
+   .card-row {
+        gap: 20px;
+   }
+
+   .site-title {
+        font-size: 2rem;
+        padding: 0.5rem;
+   }
+
+   .btn {
+        width: 90%;
+        max-width: 160px;
+        height: 40px;
+        font-size: calc(0.75em + 1vw);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.2;
+        padding: 0 15px;
+   }
+
+   .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+   }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+   h2 {
+        font-size: 1.3rem;
+   }
+
+   h3 {
+        font-size: 1.1rem;
+   }
+
+   .container {
+        padding: 10px;
+        padding-top: 30px;
+   }
+
+   .feature-box {
+        padding: 12px;
+        margin-bottom: 40px;
+   }
+
+   .site-title {
+        font-size: 1.8rem;
+   }
+
+   .btn {
+        width: 92%;
+        max-width: 140px;
+        height: 38px;
+        font-size: calc(0.7em + 0.9vw);
+        padding: 0 10px;
+        min-height: 36px;
+   }
+
+   img {
+        max-width: 100%;
+        height: auto;
+   }
+}

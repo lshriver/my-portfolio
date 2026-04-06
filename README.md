@@ -1,6 +1,8 @@
 # my-portfolio
 A Flask-based personal portfolio website showcasing scientific and computational projects through interactive visualizations and engaging user experiences.
 
+- Example repo: https://github.com/lshriver/portfolio-original
+
 ## Project Structure
 ```aiignore
 .
@@ -44,5 +46,4 @@ A Flask-based personal portfolio website showcasing scientific and computational
 2. Install required dependencies: `pip install -r requirements.txt`.
 3. Run the Flask application: `python app.py`
 4. Access site preview at http://localhost:5000/.
-
-- [ ] Get it live
+5. 

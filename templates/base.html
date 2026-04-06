@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Lauren Shriver - Portfolio{% endblock %}</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!-- Responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <div class="container" stype="padding-top: 60px;">
+        <header>
+            {% if request.path == '/' %}
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h1 class="site-title">
+                    <a href="{{ url_for('home') }}" class="gradient_text_2"Lauren Shriver</a>
+                </h1>
+
+                <style>
+                    .site-title {
+                        position: relative;
+                        font-size: 2.8rem;
+                        margin: 0;
+                        margin-top: 30px;
+                        padding: 1rem;
+                        filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.7));
+                    }
+
+                    .site-title a:hover {
+                        filter: brightness(1.2);
+                        text-decoration: none;
+                    }
+                </style>
+            </div>
+            {% endif %}
+        </header>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer style="text-align: center; margin-top: 100px; margin-bottom: 120px;">
+            <p class="gradient_text_4" style="opacity: 1.0; font-size: 1.1rem; padding: 10px; display: inline-block;">
+                © 2026 Lauren Shriver. All rights reserved.
+            </p>
+        </footer>
+    </div>
+
+    <!-- Page-specific scripts -->
+    {% block scripts %}{% endblock %}
+</body>
+</html>
