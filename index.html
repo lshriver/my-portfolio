@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Lauren Shriver - Portfolio{% endblock %}</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tech-icons.css') }}">
+    <!-- Responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <div class="container" stype="padding-top: 60px;">
+        <header>
+            {% if request.path == '/' %}
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h1 class="site-title">
+                    <a href="{{ url_for('home') }}" class="gradient_text_2">Lauren Shriver</a>
+                </h1>
+
+                <style>
+                    .site-title {
+                        position: relative;
+                        font-size: 2.8rem;
+                        margin: 0;
+                        margin-top: 30px;
+                        padding: 1rem;
+                        filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.7));
+                    }
+
+                    .site-title a:hover {
+                        filter: brightness(1.2);
+                        text-decoration: none;
+                    }
+                </style>
+            </div>
+            {% endif %}
+        </header>
+
+        <main>
+
+            <!-- About Me Section -->
+            <div class="projects-section" style="text-align: center;">
+                <div class="feature-box" style="text-align: center;">
+                    <div class="feature-box-content" style="text-align: center;">
+                        <div class="contact-links" style="margin-bottom: 1rem; display: flex; justify-content: center; width: 100%; text-align: center;">
+                            <a href="https://www.linkedin.com/in/lshriver" target="_blank"><span class="emoji">👥</span> <span class="link-text">LinkedIn</span></a>
+                            <a href="https://github.com/lshriver" target="_blank"><span class="emoji">💻</span> <span class="link-text">GitHub</span></a>
+                            <a href="mailto:lshriver@protonmail.com"><span class="emoji">📧</span> <span class="link-text">Email</span></a>
+                            <a href="https://lshriver.github.io/myCV/" target="_blank"><span class="emoji">📄</span> <span class="link-text">CV</span></a>
+                            <a href="https://orcid.org/0000-0003-4759-5577" target="_blank"><span class="emoji">🔗</span> <span class="link-text">ORCID Profile</span></a>
+                        </div>
+                        <p style="color: #c5f8ff; text-align: center;">Welcome to my portfolio! I’m Lauren Shriver, a STEM enthusiast with a deep interest in computational biology, physical chemistry, and neuroscience. I love tackling complex problems through creative, interdisciplinary approaches. Check out projects like the Kuramoto Model for synchronization, Kepler’s Laws for orbital mechanics, and neural signaling analysis using the Hodgkin-Huxley model. Dive in and explore how I bring technical expertise and curiosity together to solve scientific challenges!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <h2 class="gradient_text_1" style="
+                position: relative;
+                margin: 3rem 0 2rem;
+                font-size: 2.5rem;
+                padding: 1rem;
+                font-family: 'Aclonica', sans-serif;
+                filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.7));
+                text-align: center;">
+                Main Projects
+            </h2>
+
+            <div class="projects-section">
+                <div class="card-row">
+                    <div class="feature-box">
+                        <div class="feature-box-container">
+                            <h3 class="gradient_text_1">Low Fidelity PIML Projects</h3>
+                            <div class="tooltip-container">
+                                <div>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Pytorch</span>
+                                    <span class="tech-tag">SQlite3</span>
+                                    <span class="stem-tag">Physics-Informed Machine Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="color: #C5F8FF;">
+                            A set of low-fidelity physics-informed machine learning projects I have been working on since December 2026.
+                        </p>
+                        <a href="https://github.com/Scriber-Labs/lf-pinn-harmonic-oscillator" class="btn" style="font-size: 16px; font-weight: 600; color: whitesmoke; background-clip: border-box; -webkit-background-clip: border-box;">Harmonic Oscillator</a>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-box-container">
+                            <h3 class="gradient_text_1">My Zettelkasten</h3>
+                            <div class="tooltip-container">
+                                <span class="tech-tag">PreTeXt</span>
+                            </div>
+                            <p style="color: #C5F8FF;">
+                                A collection of notes and ideas I have been writing down over the years. I use PreTeXt to write in a simple, clean, and elegant way.
+                            </p>
+                            <a href="https://eigenscribe.github.io/there-and-back-again/frontmatter.html" class="btn" style="font-size: 16px; font-weight: 600; color: whitesmoke; background-clip: border-box; -webkit-background-clip: border-box;">There-And-Back-Again</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer style="text-align: center; margin-top: 100px; margin-bottom: 120px;">
+            <p class="gradient_text_1" style="opacity: 1.0; font-size: 1.1rem; padding: 10px; display: inline-block;">
+                © 2026 Lauren Shriver. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
