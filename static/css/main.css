@@ -512,7 +512,7 @@ a.btn {
 
 .stem-tag {
     display: inline-block;
-    background: var(--gradient-purple_dark);
+    background-image: var(--gradient-purple_dark);
     border: 1px solid rgba(129, 140, 248, 0.45);
     border-radius: 15px;
     padding: 3px 10px;
