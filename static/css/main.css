@@ -18,8 +18,8 @@
     --gradient-cyan-to-blue: linear-gradient(#00FFEE, #0596F0);
     --gradient-green-to-blue: linear-gradient(130 deg, #22F792, #27AAFF);
     --gradient-blue-to-purple: linear-gradient(to right bottom, #00E8FF, #14B5FF, #5280FF, #7952F5);
-    --gradient-blue-to-purple: linear-gradient(to right bottom, rgba(0, 232, 255, 0.2), rgba(20, 181, 255, 0.2), rgba(82, 128, 255, 0.2), rgba(121, 82, 245, 0.2));
-    --gradient-purple-to-pink: linear-gradient(135deg, rgba(99, 102, 241, 0.35), rgba(139, 92, 246, 0.3), rgba(168, 85, 247, 0.25));
+    --gradient-blue-to-purple_dark: linear-gradient(to right bottom, rgba(0, 232, 255, 0.2), rgba(20, 181, 255, 0.2), rgba(82, 128, 255, 0.2), rgba(121, 82, 245, 0.2));
+    --gradient-purple-to-pink: linear-gradient(135deg, rgba(99, 102, 241, 0.35), rgba(139, 92, 246, 0.3), rgba(168, 85, 247, 0.25), rgba(255, 99, 101, 0.25));
 
     --gradient-eigenscribe: linear-gradient(135deg, #00E8FF, #14B5FF, #7952F5);
 
@@ -496,9 +496,22 @@ a.btn {
     color: whitesmoke;
 }
 
-.stem-tag {
+.soft-skill {
     display: inline-block;
     background: var(--gradient-purple-to-pink);
+    border: 1px solid rgba(255, 99, 101, 0.45);
+    border-radius: 15px;
+    padding: 3px 10px;
+    margin: 3px;
+    font-size: 0.8rem;
+    color: #F07DC8;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.stem-tag {
+    display: inline-block;
+    background: var(--gradient-blue-to-purple_dark);
     border: 1px solid rgba(129, 140, 248, 0.45);
     border-radius: 15px;
     padding: 3px 10px;

@@ -5,18 +5,23 @@ A Flask-based personal portfolio website showcasing scientific and computational
 
 ## Project Structure
 ```aiignore
-.
-├── app.py                # Main Flask application
-├── static/               # All static assets for Flask
-│   ├── css/              # CSS files
-│   ├── js/               # JavaScript files
-│   └── images/           # Images and media
-├── templates/            # Flask HTML templates
-│   ├── base.html         # Base template with common elements
-│   ├── index.html        # Home page
-│   ├── projects/         # Project pages
-│   └── resources/        # Educational resource pages
-└── utils/                # Utility functions
+my-portfolio/
+├── static/
+│   ├── css/
+│   │   ├── main.css
+│   │   └── tech-icons.css
+│   ├── images/
+│   │   ├── favicon.png
+│   │   ├── logo.png
+│   │   └── wisp.jpg
+│   ├── js/
+│       └── common.js
+├── templates/
+│   └── base.html
+├── LICENSE
+├── README.md
+├── app.py         # old flask application
+└── index.html
 ```
 
 ## Features
