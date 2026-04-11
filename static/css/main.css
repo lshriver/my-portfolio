@@ -19,7 +19,7 @@
     --gradient-green-to-blue: linear-gradient(130 deg, #22F792, #27AAFF);
     --gradient-blue-to-purple: linear-gradient(to right bottom, #00E8FF, #14B5FF, #5280FF, #7952F5);
     --gradient-blue-to-purple_dark: linear-gradient(to right bottom, rgba(0, 232, 255, 0.2), rgba(20, 181, 255, 0.2), rgba(82, 128, 255, 0.2), rgba(121, 82, 245, 0.2));
-    --gradient-purple-to-pink: linear-gradient(135deg, rgba(99, 102, 241, 0.35), rgba(139, 92, 246, 0.3), rgba(168, 85, 247, 0.25), rgba(255, 99, 101, 0.25));
+    --gradient-purple-to-pink: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(168, 85, 247, 0.25), rgba(255, 99, 101, 0.25));
 
     --gradient-eigenscribe: linear-gradient(135deg, #00E8FF, #14B5FF, #7952F5);
 
