@@ -1,5 +1,5 @@
 # my-portfolio
-A Flask-based personal portfolio website showcasing scientific and computational projects through interactive visualizations and engaging user experiences.
+A personal portfolio website showcasing scientific and computational projects through interactive visualizations and engaging user experiences.
 
 - Example repo: https://github.com/lshriver/portfolio-original
 
