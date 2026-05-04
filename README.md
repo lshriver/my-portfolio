@@ -1,7 +1,12 @@
 # my-portfolio
 A personal portfolio website showcasing scientific and computational projects through interactive visualizations and engaging user experiences.
 
-- Example repo: https://github.com/lshriver/portfolio-original
+🌐 https://github.com/lshriver/portfolio-original
+
+## Local Development
+```python
+python3 -m http.server 8000 --bind 127.0.0.1
+```
 
 ## Project Structure
 ```aiignore
