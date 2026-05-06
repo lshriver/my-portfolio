@@ -37,6 +37,7 @@
     --border-md: 12px;
     --border-lg: 24px;
     --border-xl: 40px;
+    --radius-pill: 50px;
 
     --radius-xs: 4px;
     --radius-sm: 8px;
@@ -497,10 +498,10 @@ a.btn {
     display: inline-block;
     background: linear-gradient(130deg, rgba(34, 247, 147, 0.2), rgba(10, 149, 235, 0.2));
     border: 1px solid rgba(34, 247, 147, 0.3);
-    border-radius: 15px;
-    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    padding: 0.2rem 0.6rem;
     margin: 3px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: whitesmoke;
 }
 
