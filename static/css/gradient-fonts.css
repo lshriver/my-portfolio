@@ -1,0 +1,42 @@
+/* ----- More Font Styles ----- */
+/* Gradient text styles */
+.gradient_text_1 {
+    font-weight: bold !important;
+    background: var(--gradient-blue);
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    background-clip: text !important;
+    text-align: center;
+}
+
+.gradient_text_2 {
+    font-weight: bold;
+    background: var(--gradient-cyan-to-blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.gradient_text_3 {
+    font-weight: bold;
+    background: var(--gradient-green-to-blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.gradient_text_4 {
+    font-weight: bold;
+    background: var(--gradient-eigenscribe);
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    background-clip: text !important;
+    text-align: center;
+}
+
+.eigenscribe-gradient-text {
+    background: var(--gradient-eigenscribe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
