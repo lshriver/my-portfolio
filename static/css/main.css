@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 
+/* Modular Element Styles */
+@import "elements/footer.css";
+
+
 :root {
     /* Color Palette */
     --color-bg: #0D1117;
@@ -71,8 +75,6 @@
             rgba(22, 163, 74, 0.45)
     );
 
-
-
     /* Icon Gradients */
     --tech-icon-gradient: linear-gradient(--gradient-transparent-green);
     --stem-icon-gradient: var(--gradient-transparent-blue);
@@ -118,6 +120,8 @@
     --space-lg: 1.5rem;
     --space-xl: 2rem;
 }
+
+
 
 * {
     box-sizing: border-box;
