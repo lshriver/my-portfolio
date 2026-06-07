@@ -1,6 +1,6 @@
 .tech-tag {
     display: inline-block;
-    background-image: var(--tech-icon-gradient) !important;
+    background-image: var(--tech-icon-gradient);
     border: 1px solid rgba(34, 197, 94, 0.6) !important;
     border-radius: var(--radius-sm);
     padding: 0.2rem 0.6rem;
