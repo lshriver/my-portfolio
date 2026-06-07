@@ -81,7 +81,7 @@
     );
 
     /* Icon Gradients */
-    --tech-icon-gradient: linear-gradient(--gradient-transparent-green);
+    --tech-icon-gradient: var(--gradient-transparent-green);
     --stem-icon-gradient: var(--gradient-transparent-blue);
     --soft_skill-icon-gradient: var(--gradient-transparent-purple);
 
