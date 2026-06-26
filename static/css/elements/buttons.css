@@ -1,0 +1,85 @@
+/* ----- Button Styles ----- */
+.btn {
+    background-image: var(--gradient-blue);
+    box-shadow: 0 4px 15px 0 var(--shadow-button);
+    width: 85%;
+    max-width: 180px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px auto;
+    height: 45px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: var(--radius-md);
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    color: whitesmoke;
+    text-shadow: var(--shadow-text);
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.btn span, .btn a, .btn p, .btn div {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: whitesmoke;
+    background: transparent;
+    background-image: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    text-shadow: var(--shadow-text);
+    margin: 0;
+    padding: 0;
+}
+
+a.btn {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn > a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.btn-style-2 {
+    background-image: var(--gradient-eigenscribe);
+    border: none;
+    color: whitesmoke;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    box-shadow: var(--shadow-button-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover, .btn-style-2:hover {
+    background-position: 100% 0;
+    filter: brightness(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.eigenscribe-btn {
+    background-image: var(--gradient-blue);
+    box-shadow: var(--shadow-button);
+    border: none;
+    color: white;
+    text-shadow: var(--shadow-text);
+}
+
+.eigenscribe-btn:hover {
+    filter: brightness(1.1);
+}
